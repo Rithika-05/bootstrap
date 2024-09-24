@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('https://aecom.com/uk/wp-content/uploads/2015/10/City-Hospital-5-smaller-e1444250182574-802x531.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 200px;
+    }
+    .department img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#departments">Departments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#doctors">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container text-center">
+      <h1>Welcome to City Hospital</h1>
+      <p style="color: black;">Your health is our priority</p>
+    </div>
+  </section>
+
+  <!-- Hospital Details Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4" style="color: burlywood;">Hospital Details</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>About Us</h3>
+        <p>Our hospital provides state-of-the-art medical services and is equipped with the latest technology to ensure the best healthcare for our patients.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Mission</h3>
+        <p>To deliver quality healthcare with compassion and excellence. We are committed to making a difference in the lives of our patients and the community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section id="departments" class="container py-5">
+    <h2 class="text-center mb-4">Departments</h2>
+    <div class="row">
+      <!-- Cardiology Department -->
+      <div class="col-md-4">
+        <div class="card department">
+          <img src="https://wallpaperaccess.com/full/3412358.jpg" class="card-img-top" alt="Cardiology">
+          <div class="card-body">
+            <h5 class="card-title">Cardiology</h5>
+            <p class="card-text">We provide comprehensive heart care with state-of-the-art technology.</p>
+            <!-- More Details Button -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cardiologyDetails" aria-expanded="false" aria-controls="cardiologyDetails">
+              More Details
+            </button>
+            <div class="collapse mt-3" id="cardiologyDetails">
+              <p class="card-text">Our cardiology department specializes in treating heart conditions such as coronary artery disease, heart failure, and arrhythmias. We offer diagnostic services like ECG, stress tests, and cardiac catheterization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neurology Department -->
+      <div class="col-md-4">
+        <div class="card department">
+          <img src="https://wallpaperaccess.com/full/3633927.jpg" class="card-img-top" alt="Neurology">
+          <div class="card-body">
+            <h5 class="card-title">Neurology</h5>
+            <p class="card-text">Expert care for neurological disorders using the latest diagnostic tools.</p>
+            <!-- More Details Button -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#neurologyDetails" aria-expanded="false" aria-controls="neurologyDetails">
+              More Details
+            </button>
+            <div class="collapse mt-3" id="neurologyDetails">
+              <p class="card-text">Our neurology department treats conditions such as stroke, epilepsy, Parkinson's disease, and multiple sclerosis. We have advanced diagnostic imaging and provide 24/7 emergency neurological care.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orthopedics Department -->
+      <div class="col-md-4">
+        <div class="card department">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.Twfhgf4l9FOJLW_nSRzqCAHaEK&pid=Api&P=0&h=220" class="card-img-top" alt="Orthopedics">
+          <div class="card-body">
+            <h5 class="card-title">Orthopedics</h5>
+            <p class="card-text">Advanced treatment for musculoskeletal conditions and injuries.</p>
+            <!-- More Details Button -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#orthopedicsDetails" aria-expanded="false" aria-controls="orthopedicsDetails">
+              More Details
+            </button>
+            <div class="collapse mt-3" id="orthopedicsDetails">
+              <p class="card-text">We provide treatment for fractures, joint replacements, and spine surgery. Our orthopedic surgeons are experienced in minimally invasive procedures and rehabilitation for faster recovery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Departments Row -->
+    <div class="row mt-4">
+      <!-- Pediatrics Department -->
+      <div class="col-md-4">
+        <div class="card department">
+          <img src="https://symbiosisonlinepublishing.com/flyers/Pediatricscoverpage.jpg" class="card-img-top" alt="Pediatrics">
+          <div class="card-body">
+            <h5 class="card-title">Pediatrics</h5>
+            <p class="card-text">Comprehensive healthcare services for children and infants.</p>
+            <!-- More Details Button -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pediatricsDetails" aria-expanded="false" aria-controls="pediatricsDetails">
+              More Details
+            </button>
+            <div class="collapse mt-3" id="pediatricsDetails">
+              <p class="card-text">Our pediatric department offers vaccinations, developmental screenings, and treatments for childhood illnesses. Our staff is trained to provide compassionate care to our youngest patients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oncology Department -->
+      <div class="col-md-4">
+        <div class="card department">
+          <img src="https://www.bmhospitals.com/wp-content/uploads/2021/05/Oncology.jpg" class="card-img-top" alt="Oncology">
+          <div class="card-body">
+            <h5 class="card-title">Oncology</h5>
+            <p class="card-text">Expert cancer care with advanced chemotherapy and radiation services.</p>
+            <!-- More Details Button -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#oncologyDetails" aria-expanded="false" aria-controls="oncologyDetails">
+              More Details
+            </button>
+            <div class="collapse mt-3" id="oncologyDetails">
+              <p class="card-text">Our oncology department specializes in personalized cancer treatment plans, offering a range of therapies such as chemotherapy, radiation, and immunotherapy. We provide holistic support to patients throughout their journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dermatology Department -->
+      <div class="col-md-4">
+        <div class="card department">
+          <img src="https://contourderm.com/wp-content/uploads/2014/04/medical-dermatology-web.jpg" class="card-img-top" alt="Dermatology">
+          <div class="card-body">
+            <h5 class="card-title">Dermatology</h5>
+            <p class="card-text">Expert care for skin, hair, and nail conditions.</p>
+            <!-- More Details Button -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#dermatologyDetails" aria-expanded="false" aria-controls="dermatologyDetails">
+              More Details
+            </button>
+            <div class="collapse mt-3" id="dermatologyDetails">
+              <p class="card-text">Our dermatology department offers treatment for a wide range of conditions, including acne, eczema, psoriasis, and skin cancer. We also provide cosmetic dermatology services such as laser treatments and Botox.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="bg-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Hospital. All rights reserved.</p>
+      <p>Contact us at info@hospital.com or call +123 456 7890</p>
+      <!-- Visit Website Button -->
+      <a href="https://yourhospitalwebsite.com" class="btn btn-primary btn-lg mt-3" role="button" style="background-color:green">Visit Our Website</a>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
